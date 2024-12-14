@@ -2,7 +2,7 @@
   "name": "products",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://LinaSapozhnik1991.github.io/List",
+  "homepage":"https://LinaSapozhnik1991.github.io/list",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-regular-svg-icons": "^6.7.1",

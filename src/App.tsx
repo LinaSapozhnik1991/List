@@ -12,8 +12,7 @@ const App: React.FC = () => {
             <HashRouter >
                 <Navbar />
                 <Routes>
-                    
-                    <Route path="/List" element={<Products />} /> 
+                    <Route path="/" element={<Products />} /> 
                     <Route path="/products/:id" element={<ProductDetail />} />
                     <Route path="/edit/:id" element={<EditProduct />} /> 
                     <Route path="/create-product" element={<CreateProduct />} />
