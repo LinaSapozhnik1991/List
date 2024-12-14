@@ -23,7 +23,6 @@ const ProductDetail: React.FC = () => {
     if (!product) {
         return <div> not found</div>;
     }
-
     return (
         <div className='ProductDetail'>
             <h1>{product.flavorName}</h1> 
@@ -35,7 +34,6 @@ const ProductDetail: React.FC = () => {
                 <i className="fa fa-pencil" aria-hidden="true"></i>
                 <FontAwesomeIcon icon={faPencilAlt} aria-hidden="true" />Редактировать
             </Link>
-
             {/* <Link className='back' to="/"> <i className="fa fa-arrow-left" aria-hidden="true"></i> Go back</Link> */}
          
         </div>
