@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { Route, Routes, HashRouter } from 'react-router-dom';
 import Products from './components/pages/Products';
 import ProductDetail from './components/pages/ProductDetail';
 import CreateProduct from './components/pages/CreateProduct';
@@ -9,7 +9,7 @@ import EditProduct from './components/EditProduct';
 const App: React.FC = () => {
     return (
         <div className='App'>
-            <BrowserRouter >
+            <HashRouter >
                 <Navbar />
                 <Routes>
                     <Route path="/List" element={<Products />} />
@@ -17,7 +17,7 @@ const App: React.FC = () => {
                     <Route path="/edit/:id" element={<EditProduct />} /> 
                     <Route path="/create-product" element={<CreateProduct />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 };
