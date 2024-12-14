@@ -1,0 +1,20 @@
+.Edit{
+
+    position: relative;
+}
+
+.EditForm{
+    margin: 65px 50px;
+    display: flex;
+    flex-direction: column;
+
+ gap: 20px;
+ 
+
+}
+input{
+    padding: 30px 10px;
+}
+.EditSaveButton{
+    width: 100px;
+}

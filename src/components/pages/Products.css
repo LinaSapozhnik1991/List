@@ -1,0 +1,80 @@
+.Products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+  
+}
+.ProductList{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Searh, .ProductList{
+    margin: 50px;
+    width: 50%;
+
+}
+#Searh{
+    border:2px solid rgb(102,102,219);
+    padding: 5px;
+}
+.ProductsCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    
+    width: 200px;
+    min-height: 300px;
+    background: linear-gradient(-172deg,rgb(185, 235, 230), rgb(227, 208, 243));
+    border: 3px solid rgb(102, 102, 219);
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+.ProductsCardsLink img{
+    width: 150px;
+    margin: 20px auto;
+
+}
+.ProductsCardsLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    color: rgb(100, 36, 129);
+    font-size: 16px;
+}
+.buttons{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.button{
+    width: 50px;
+}
+.Like {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red; 
+    font-size: 30px; 
+}
+.Remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1a123f; 
+    font-size: 20px;
+    margin-left: 10px; 
+}
+
+.frown {display: flex;
+flex-direction: column;
+    font-size: 48px;
+ color: red;
+}
