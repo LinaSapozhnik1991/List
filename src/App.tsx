@@ -9,7 +9,7 @@ import EditProduct from './components/EditProduct';
 const App: React.FC = () => {
     return (
         <div className='App'>
-            <BrowserRouter basename='/List'>
+            <BrowserRouter >
                 <Navbar />
                 <Routes>
                     <Route path="/List" element={<Products />} />
