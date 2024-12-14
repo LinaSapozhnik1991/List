@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as regularHeart, faFaceFrown } from '@fortawesome/free-regular-svg-icons';
 import { faTrash, } from '@fortawesome/free-solid-svg-icons';
+import Preloader from '../../ui/Preloader';
 
 
 
@@ -78,7 +79,7 @@ const Products: React.FC = () => {
             />
             <div className='ProductList'>
                 {loading ? (
-                    <p>Loading...</p>
+                    <Preloader/>
                 ) : (
                     filteredProducts.length > 0 && currentProducts.length > 0 ? (
                         currentProducts.map(product => (
@@ -87,14 +88,7 @@ const Products: React.FC = () => {
                                     <img src={product.imageUrl} alt={product.flavorName} />
                                     <h3>{product.flavorName.length > 30 ? `${product.flavorName.substring(0, 30)}...` : product.flavorName}</h3>
                                 </Link>
-                                {/*<div className='buttons'>
-                                    <button className='Like button' onClick={() => dispatch(toggleLike(product.beanId))}>
-                                        <i className={`fa${product.isLiked ? ' fa-heart' : ' fa-heart-o'}`} aria-hidden="true"></i>
-                                    </button>
-                                    <button className='Remove button' onClick={() => dispatch(removeProduct(product.beanId))}>
-                                        <i className="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                </div>*/}
+                           
                                 <div className='buttons'>
     <button className='Like button' onClick={() => dispatch(toggleLike(product.beanId))}>
         <FontAwesomeIcon icon={product.isLiked ? solidHeart : regularHeart} />
